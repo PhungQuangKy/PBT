@@ -60,6 +60,22 @@ Hộp 3
 -Thẻ <div> luôn bắt đầu trên một dòng mới và kéo dài hết chiều rộng còn lại của hàng
 -Thẻ Inline (<span> và <strong>) : Chỉ chiếm vừa đủ không gian của nội dung bên trong nó. Các thẻ inline sẽ nằm cùng một hàng với nhau nếu còn đủ chỗ. Thẻ <strong> nội dung bên trong sẽ đc bôi đậm
 ```
+##Câu A4:
+
+`<thead>` (Table Header): Dùng để bao bọc các hàng tiêu đề của bảng. Thông tin ở đây giúp người dùng biết nội dung của các cột bên dưới là gì.
+
+`<tbody>` (Table Body): Chứa dữ liệu chính của bảng. Đây là phần nội dung thay đổi nhiều nhất.
+
+`<tfoot>` (Table Footer): Dùng cho các hàng tổng kết hoặc chú thích ở cuối bảng (ví dụ: Tổng tiền, Ghi chú).
+
+Tại sao KHÔNG NÊN dùng table để tạo layout trang web?
+
+-Vì thẻ `<table>` sinh ra là để hiển thị dữ liệu dạng bảng (như danh sách sinh viên, bảng điểm), không phải để dựng khung giao diện.
+
+-Bảng có cấu trúc rất cứng nhắc. Trên màn hình điện thoại, bảng không thể tự động xếp chồng các cột lên nhau một cách linh hoạt như CSS Flexbox hay Grid.
+
+-Trình duyệt thường phải đợi tải hết toàn bộ nội dung trong thẻ <table> mới bắt đầu hiển thị bảng đó ra màn hình. Điều này làm trải nghiệm người dùng bị chậm lại so với việc dùng các thẻ `<div>` hoặc thẻ Semantic.
+
 
 
 
