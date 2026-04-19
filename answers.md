@@ -97,6 +97,29 @@ Lỗi 8: Dòng 34 — Sử dụng thẻ <main> lần thứ hai — Sửa: Một 
 Lỗi 9: Dòng 38 — Thẻ <footer> thiếu thẻ đóng </footer> — Sửa: Thêm </footer> sau đoạn văn bản bản quyền.
 
 Lỗi 10: Tổng thể — Cấu trúc phân cấp sai — Sửa: Thẻ <header> và <h1> nên được bọc trong một khối chung, không nên để <h1> nằm ngoài header hoặc trôi lơ lửng trên đầu một cách rời rạc.
+```
+
+##Câu C2:
+```
+Quan điểm "dùng <div> cho tất cả mọi thứ" tuy nghe có vẻ tiết kiệm thời gian trước mắt, nhưng thực tế lại đang tạo ra những món "nợ kỹ thuật" khổng lồ cho dự án
+
+về lâu dài vì việc sử dụng Semantic HTML không chỉ là vấn đề thẩm mỹ mà còn là nền tảng cốt lõi của một sản phẩm web chuyên nghiệp. Trước hết, về mặt SEO, các
+
+công cụ tìm kiếm như Google dựa vào cấu trúc thẻ để hiểu trọng tâm nội dung; một trang web tràn ngập thẻ <div> sẽ khiến bot gặp khó khăn trong việc phân loại
+
+thông tin, từ đó làm giảm thứ hạng hiển thị so với đối thủ. Thứ hai, về khả năng tiếp cận (Accessibility), những người dùng khiếm thị sử dụng trình đọc màn hình
+
+sẽ không thể điều hướng hiệu quả nếu thiếu các cột mốc như <nav>, <main> hay <footer>, khiến sản phẩm của chúng ta trở nên thiếu nhân văn và bị giới hạn đối tượng
+
+sử dụng. Một ví dụ điển hình là khi bạn dùng thẻ <button>, trình duyệt sẽ tự động hỗ trợ tương tác bằng bàn phím và phím Space, trong khi nếu dùng <div
+
+class="btn">, bạn sẽ phải tốn thêm nhiều thời gian viết JavaScript chỉ để tái lập những tính năng mặc định đó. Tuy nhiên, điều này không có nghĩa là loại bỏ hoàn
+
+toàn <div>, vì nó vẫn là lựa chọn phù hợp nhất cho các trường hợp mang tính chất trình bày thuần túy (Layout Purpose), chẳng hạn như dùng làm các khối bọc trung
+
+gian để áp dụng thuộc tính display: flex hoặc grid nhằm căn chỉnh giao diện mà không làm thay đổi ý nghĩa ngữ nghĩa của tài liệu. Việc học các thẻ mới không hề
+
+lãng phí, mà chính là cách giúp chúng ta viết code sạch hơn, tối ưu hơn và chuyên nghiệp hơn trong mắt đồng nghiệp lẫn khách hàng.
 
 
 
